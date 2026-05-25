@@ -25,7 +25,8 @@ const allowedOrigins = [
   'http://localhost:8081',
   'https://gowtham-nine.vercel.app',
   process.env.CORS_ORIGIN,
-  process.env.FRONTEND_URL
+  process.env.FRONTEND_URL,
+  // Add your Vercel deployment URL here after deployment
 ].filter(Boolean);
 
 app.use(cors({
